@@ -18,7 +18,7 @@ export default async function PostsPage() {
               <h2 className="text-xl font-semibold text-gray-800">
                 {post?.title}
               </h2>
-              <p className="text-gray-600">{post?.description}</p>
+              <p className="text-gray-600 text-sm">{post?.description}</p>
               {/* Render other post details as needed */}
             </Link>
           </li>
