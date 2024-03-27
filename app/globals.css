@@ -1,33 +1,76 @@
+/* get ibm plex mono font */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap');
+
+/* get augillion font */
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* hide scroll bar */
+::-webkit-scrollbar {
+  display: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* body {
+  background-color: #f8f8f8;
+  font-family: 'IBM Plex Mono', 'Menlo', 'Monaco', monospace;
+} */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    --font-serif: 'IBM Plex Mono', 'Menlo', 'Monaco', monospace;
+
+    /* default light-mode colors */
+    --foreground-default: #222;
+    --foreground-light: #778;
+    --background-default: #f8f8f8;
+    --background-block: #eee;
+    --accent: #a02c35;
+    --accent-transparent: rgba(223, 73, 82, .25);
+    --theme-color: #243D64
+}
+
+html {
+    /* adjust rem for page */
+    font-size: 16px;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    font-family: var(--font-serif);
+    color: var(--foreground-default);
+    background: var(--background-default);
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+h1,
+h2,
+h3 {
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 1.625em;
+    color: var(--foreground-default);
+    padding-bottom: .125rem;
+    display: inline-block;
 }
+
+li a,
+p a {
+    text-decoration: none;
+    border-radius: 3px;
+    background: var(--accent-transparent);
+}
+
+
+
+
+
+
