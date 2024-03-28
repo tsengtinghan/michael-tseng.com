@@ -58,9 +58,7 @@ h3 {
     font-size: 1em;
     line-height: 1.625em;
     color: var(--foreground-default);
-    padding-bottom: .125rem;
-    display: inline-block;
-}
+} 
 
 li a,
 p a {

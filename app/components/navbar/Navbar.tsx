@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <div>
+    <div className="mb-10">
       <Link href="/">
         <h1>
           michael-tseng.com

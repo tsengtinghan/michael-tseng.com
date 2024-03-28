@@ -15,11 +15,11 @@ export default async function PostsPage() {
             className="bg-white shadow overflow-hidden rounded-md px-6 py-4 my-2"
           >
             <Link href={`/blog/${post?.slug}`}>
-              <h2 className="text-xl font-semibold text-gray-800">
+              <h2 className="font-semibold text-gray-800">
                 {post?.title}
               </h2>
               <p className="text-gray-600 text-sm">{post?.description}</p>
-              {/* Render other post details as needed */}
+              <p className="text-gray-600 text-sm text-right">{post?.date}</p>
             </Link>
           </li>
         ))}
