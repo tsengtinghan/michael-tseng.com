@@ -7,7 +7,7 @@ import { mdxComponents } from './markdown-components'
 
 export function PostBody({ children }: { children: string }) {
   return (
-    <div className='prose pt-5'>
+    <div className='prose'>
       <MDXRemote
         source={children}
         options={{

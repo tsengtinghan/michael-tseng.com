@@ -4,7 +4,7 @@
             "title": "Project 1",
             "description": "This is a project description",
             "href": "http://www.google.com",
-            "imageUrl": "http://placehold.it/350x150",
+            "imageUrl": "/next.svg",
             "date": "2014-01-01"
 
         },
@@ -12,14 +12,14 @@
             "title": "Project 2",
             "description": "This is a project description",
             "href": "http://www.google.com",
-            "imageUrl": "http://placehold.it/350x150",
+            "imageUrl": "/next.svg",
             "date": "2014-01-01"
         },
         {
             "title": "Project 3",
             "description": "This is a project description",
             "href": "http://www.google.com",
-            "imageUrl": "http://placehold.it/350x150",
+            "imageUrl": "/vercel.svg",
             "date": "2014-01-01"
         }
     ]

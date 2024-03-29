@@ -17,6 +17,7 @@ export type Post = {
     description: string
     href: string
     imageUrl: string
+    date: string
   }
 
   

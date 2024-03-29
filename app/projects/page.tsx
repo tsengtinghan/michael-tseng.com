@@ -1,11 +1,12 @@
 import type { Project } from '@lib/types.d.ts';
 import projects from './projects.json';
+import ProjectDisplay from '@components/projectdisplay';
 
 export default async function ProjectsPage() {
     return (
         <div>
             ProjectsPage
-            <ProjectsGallery projects={projects.projects} />
+            <ProjectDisplay projects={projects.projects} />
         </div>
     )
 }
