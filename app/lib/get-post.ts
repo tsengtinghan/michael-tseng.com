@@ -10,7 +10,7 @@ import { cache } from 'react'
 
 export const getPosts = cache(async () => {
   try {
-    const posts = await fs.readdir('./posts/');
+    const posts = await fs.readdir(path.join(process.cwd(), './posts/'));
     console.log('Posts directory:', posts);
     
     return Promise.all(
