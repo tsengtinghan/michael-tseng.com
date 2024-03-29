@@ -38,7 +38,3 @@ export async function getPost(slug: string) {
 }
 
 export default getPosts
-
-// Usage:
-const posts = await getPosts()
-const post = await getPost('my-post')
