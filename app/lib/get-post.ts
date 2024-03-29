@@ -9,32 +9,43 @@ import { cache } from 'react'
 // when rendering the page.
 
 export const getPosts = cache(async () => {
-    try {
-      const posts = await fs.readdir('./posts/');
-      return Promise.all(
-        posts
-          .filter((file) => path.extname(file) === '.mdx')
-          .map(async (file) => {
-            const filePath = `./posts/${file}`;
-            const postContent = await fs.readFile(filePath, 'utf8');
-            const { data, content } = matter(postContent);
-            
-            if (data.published === false) {
-              return null;
-            }
-  
-            return { ...data, body: content } as Post;
-          })
-      );
-    } catch (error) {
-      console.error("Error fetching posts:", error);
-      return [];
-    }
-  });
+  try {
+    const posts = await fs.readdir('./posts/');
+    console.log('Posts directory:', posts);
+    
+    return Promise.all(
+      posts
+        .filter((file) => path.extname(file) === '.mdx')
+        .map(async (file) => {
+          const filePath = `./posts/${file}`;
+          const postContent = await fs.readFile(filePath, 'utf8');
+          const { data, content } = matter(postContent);
+          console.log('Post data:', data);
+          console.log('Post content:', content);
+          
+          if (data.published === false) {
+            return null;
+          }
+
+          const post = { ...data, body: content } as Post;
+          console.log('Returning post:', post);
+          return post;
+        })
+    );
+  } catch (error) {
+    console.error("Error fetching posts:", error);
+    return [];
+  }
+});
 
 export async function getPost(slug: string) {
-  const posts = await getPosts()
-  return posts.find((post) => post?.slug === slug) as Post
+  const posts = await getPosts();
+  console.log('All posts:', posts);
+  
+  const post = posts.find((post) => post?.slug === slug);
+  console.log('Found post:', post);
+  
+  return post as Post;
 }
 
 export default getPosts
