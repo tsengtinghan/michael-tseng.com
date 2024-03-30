@@ -14,7 +14,7 @@ export const mdxComponents: MDXComponents = {
   img: ({ children, ...props }) => {
     // You need to do some work here to get the width and height of the image.
     // See the details below for my solution.
-    return <Image {...(props as ImageProps)} />
+    return <Image {...(props as ImageProps)} width={1000} height={1000}/>
   },
   pre: Code,
   // any other components you want to use in your markdown
