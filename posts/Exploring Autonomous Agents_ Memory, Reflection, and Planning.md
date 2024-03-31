@@ -5,7 +5,7 @@ slug: exploring-autonomous-agents-memory-reflection-and-planning
 date: July 10, 2023
 published: true
 ---
-# (coscup) Exploring Autonomous Agents: Memory, Reflection, and Planning  筆記
+# Exploring Autonomous Agents: Memory, Reflection, and Planning  筆記
 ![](https://hackmd.io/_uploads/S1teXv_Uh.png)
 ## Autonomous Agents:
 Autonomous agents can be thought of as language model-powered bots that can break down complex problems and iteratively solve them, taking action on users’ behalf. We can use a simple example to illustrate what is possible with just an LLM, an agent, and with autonomous agents. With just an LLM, we can look up the best restaurants in a given city. With an agent, we can tell it to look up the highest rated restaurant with a table available and book the table for two. With an autonomous agent, we can ask it to find the best restaurant that fits into my schedule and my preferences then book it for me and my best friend. Autonomous agents can do this by breaking down a task into subtasks and using memory between each step to guide the agent’s actions.
@@ -98,7 +98,7 @@ Figure: Generative agent architecture. Source: https://arxiv.org/pdf/2304.03442.
 
 ### code implementation:
 1. Memory stream: This is implemented in the update_memories method and is supported by the compress_memories method.
-```python=
+```python
 def update_memories(self, other_agents, global_time, action_results):
         
         """
@@ -142,7 +142,7 @@ def update_memories(self, other_agents, global_time, action_results):
         return '[Recollection at Time {}:00: {}]'.format(str(global_time), memory_string_to_compress)
 ```
 2. Reflection: This is implemented in the rate_memories method, which rates the agent's memories based on their relevance and importance.
-```python=
+```python
 def rate_memories(self, locations, global_time, prompt_meta):
 
         """
@@ -180,7 +180,7 @@ def rate_memories(self, locations, global_time, prompt_meta):
         return memory_ratings
 ```
 3. Planning: This is implemented in the plan method, which generates the agent's daily plan.
-```python=
+```python
     def plan(self, global_time, prompt_meta):
         """
         Generates the agent's daily plan.
