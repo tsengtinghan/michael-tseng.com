@@ -1,8 +1,8 @@
 ---
 title: Singularity Is Near (一)
-description: A self-hostable alternative to GitHub Gist and Pastebin
+description: 奇點鄰近了嗎？
 slug: singularity-is-near-1
-date: Mar 26, 2022
+date: May 20, 2023
 published: true
 ---
 # The Singularity Is Near (一)
