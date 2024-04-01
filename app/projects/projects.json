@@ -9,10 +9,10 @@
 
         },
         {
-            "title": "Project 2",
-            "description": "This is a project description",
-            "href": "http://www.google.com",
-            "imageUrl": "/next.svg",
+            "title": "genote",
+            "description": "Just dump your thoughts and let llm organize your second brain.",
+            "href": "https://github.com/tsengtinghan/genote/tree/main",
+            "imageUrl": "/genote-techstack.jpeg",
             "date": "2014-01-01"
         },
         {
