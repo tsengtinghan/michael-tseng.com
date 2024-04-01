@@ -18,27 +18,29 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   date,
 }) => {
   return (
-    <div className="flex flex-col items-center bg-white p-4 shadow-lg rounded-lg m-2">
+    <div className="flex flex-col items-center bg-white shadow-lg rounded-lg m-2">
       <Link href={href} target="_blank" rel="noopener noreferrer">
         {imageUrl && (
           <Image
             src={imageUrl}
             alt={`Project ${title}`}
-            width={500} 
+            width={500}
             height={362}
-            className="w-full mb-4 object-cover rounded-lg"
+            className="w-full object-cover rounded-lg"
           />
         )}
+        <div className="p-4">
+          <h2 className="text-lg font-bold mb-2">{title}</h2>
+          <p className="text-sm mb-2">{date}</p>
+          <p className="text-sm text-gray-600">{description}</p>
+        </div>
       </Link>
-      <h2 className="text-lg font-bold">{title}</h2>
-      <p className="text-sm">{date}</p>
-      <p className="text-sm text-gray-600">{description}</p>
     </div>
   );
 };
 
 interface ProjectDisplayProps {
-  projects: ProjectCardProps[]; 
+  projects: ProjectCardProps[];
 }
 
 const ProjectDisplay: React.FC<ProjectDisplayProps> = ({ projects }) => {

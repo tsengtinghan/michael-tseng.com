@@ -1,8 +1,7 @@
 /* get ibm plex mono font */
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap");
 
 /* get augillion font */
-
 
 @tailwind base;
 @tailwind components;
@@ -20,56 +19,50 @@
 
 html,
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 
-    --font-serif: 'IBM Plex Mono', 'Menlo', 'Monaco', monospace;
+  --font-serif: "IBM Plex Mono", "Menlo", "Monaco", monospace;
 
-    /* default light-mode colors */
-    --foreground-default: #222;
-    --foreground-light: #778;
-    --background-default: #f8f8f8;
-    --background-block: #eee;
-    --accent: #a02c35;
-    --accent-transparent: rgba(223, 73, 82, .25);
-    --theme-color: #243D64
+  /* default light-mode colors */
+  --foreground-default: #222;
+  --foreground-light: #778;
+  --background-default: #f8f8f8;
+  --background-block: #eee;
+  --accent: #a02c35;
+  --accent-transparent: rgba(223, 73, 82, 0.25);
+  --theme-color: #243d64;
 }
 
 html {
-    /* adjust rem for page */
-    font-size: 16px;
+  /* adjust rem for page */
+  font-size: 16px;
 }
 
 body {
-    font-family: var(--font-serif);
-    color: var(--foreground-default);
-    background: var(--background-default);
+  font-family: var(--font-serif);
+  color: var(--foreground-default);
+  background: var(--background-default);
 
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 h1,
 h2,
 h3 {
-    font-weight: bold;
-    font-size: 1em;
-    line-height: 1.625em;
-    color: var(--foreground-default);
+  font-weight: bold;
+  font-size: 1em;
+  line-height: 1.625em;
+  color: var(--foreground-default);
 }
-
 
 li a,
 p a {
-    text-decoration: none;
-    border-radius: 3px;
-    background: var(--accent-transparent);
+  text-decoration: none;
+  border-radius: 3px;
+  background: var(--accent-transparent);
 }
-
-
-
-
-
 

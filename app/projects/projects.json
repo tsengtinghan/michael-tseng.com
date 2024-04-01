@@ -1,11 +1,11 @@
 {
     "projects": [
         {
-            "title": "Project 1",
-            "description": "This is a project description",
-            "href": "http://www.google.com",
-            "imageUrl": "/next.svg",
-            "date": "2014-01-01"
+            "title": "lumieres",
+            "description": "Interactive video study tool powered by Mistral large",
+            "href": "https://github.com/tsengtinghan/lumieres",
+            "imageUrl": "/lumieres-demo.gif",
+            "date": "March 2024"
 
         },
         {
@@ -13,14 +13,7 @@
             "description": "Just dump your thoughts and let llm organize your second brain.",
             "href": "https://github.com/tsengtinghan/genote/tree/main",
             "imageUrl": "/genote-techstack.jpeg",
-            "date": "2014-01-01"
-        },
-        {
-            "title": "Project 3",
-            "description": "This is a project description",
-            "href": "http://www.google.com",
-            "imageUrl": "/vercel.svg",
-            "date": "2014-01-01"
+            "date": "January 2024"
         }
     ]
 }
