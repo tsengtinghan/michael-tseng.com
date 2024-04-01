@@ -4,16 +4,23 @@ import type { Post } from "./types";
 import fs from "fs/promises";
 import { cache } from "react";
 
-// `cache` is a React 18 feature that allows you to cache a function for the lifetime of a request.
-// this means getPosts() will only be called once per page build, even though we may call it multiple times
-// when rendering the page.
+const sortByDate = (a: Post | null, b: Post | null) => {
+  if (a === null || b === null) {
+    return a === null ? 1 : -1;
+  }
+
+  const dateA = new Date(a.date);
+  const dateB = new Date(b.date);
+
+  return dateB.getTime() - dateA.getTime();
+};
 
 export const getPosts = cache(async () => {
   try {
     const posts = await fs.readdir(path.join(process.cwd(), "./posts/"));
     console.log("Posts directory:", posts);
 
-    return Promise.all(
+    const filteredPosts = await Promise.all(
       posts
         .filter(
           (file) =>
@@ -35,6 +42,9 @@ export const getPosts = cache(async () => {
           return post;
         })
     );
+
+    const sortedPosts = filteredPosts.filter((post) => post !== null).sort(sortByDate);
+    return sortedPosts;
   } catch (error) {
     console.error("Error fetching posts:", error);
     return [];
@@ -44,10 +54,8 @@ export const getPosts = cache(async () => {
 export async function getPost(slug: string) {
   const posts = await getPosts();
   console.log("All posts:", posts);
-
   const post = posts.find((post) => post?.slug === slug);
   console.log("Found post:", post);
-
   return post as Post;
 }
 
