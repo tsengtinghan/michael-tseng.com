@@ -1,6 +1,6 @@
 ---
 title: Exploring Autonomous Agents. Memory, Reflection, and Planning
-description: A deep dive into the world of autonomous agents and the technologies that power them.
+description: Notes on the world of autonomous agents and the technologies that power them.
 slug: exploring-autonomous-agents-memory-reflection-and-planning
 date: July 10, 2023
 published: true
