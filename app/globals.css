@@ -66,3 +66,40 @@ p a {
   background: var(--accent-transparent);
 }
 
+.typewriter {
+  display: inline;
+  position: relative;
+  font-size: 1em;
+  font-family: monospace;
+}
+
+.typewriter::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(4) infinite;
+}
+
+@keyframes typing {
+  0%,
+  100% {
+    content: "";
+    width: 0;
+  }
+  25% {
+    content: ".";
+    width: 1em;
+  }
+  50% {
+    content: "..";
+    width: 2em;
+  }
+  75% {
+    content: "...";
+    width: 3em;
+  }
+}
