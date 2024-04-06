@@ -1,6 +1,7 @@
 import { getPosts } from "@lib/get-post"; 
 import Link from "next/link";
 
+
 export default async function PostsPage() {
   const posts = await getPosts();
   return (
