@@ -1,6 +1,13 @@
 {
     "projects": [
         {
+            "title": "XLearn",
+            "description": "Integrate flashcard style memory recall in your X feed",
+            "href": "https://github.com/tsengtinghan/x-dev-challenge",
+            "imageUrl": "/xlearn-demo.gif",
+            "date": "April 2024"
+        },
+        {
             "title": "lumieres",
             "description": "Interactive video study tool powered by Mistral large",
             "href": "https://github.com/tsengtinghan/lumieres",
@@ -10,7 +17,7 @@
         },
         {
             "title": "genote",
-            "description": "Just dump your thoughts and let llm organize your second brain.",
+            "description": "Just dump your thoughts and let llm organize your second brain",
             "href": "https://github.com/tsengtinghan/genote/tree/main",
             "imageUrl": "/genote-techstack.jpeg",
             "date": "January 2024"
