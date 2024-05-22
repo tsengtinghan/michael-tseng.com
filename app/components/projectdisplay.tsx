@@ -31,8 +31,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         )}
         <div className="p-4">
           <h2 className="text-lg font-bold mb-2">{title}</h2>
-          <p className="text-sm mb-2">{date}</p>
-          <p className="text-sm text-gray-600">{description}</p>
+          <p className="text-sm mb-2 font-thin text-slate-400">{date}</p>
+          <p className="text-sm ">{description}</p>
         </div>
       </Link>
     </div>
