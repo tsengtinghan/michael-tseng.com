@@ -18,7 +18,7 @@ const sortByDate = (a: Post | null, b: Post | null) => {
 export const getPosts = cache(async () => {
   try {
     const posts = await fs.readdir(path.join(process.cwd(), "./posts/"));
-    console.log("Posts directory:", posts);
+    // console.log("Posts directory:", posts);
 
     const filteredPosts = await Promise.all(
       posts
@@ -30,15 +30,15 @@ export const getPosts = cache(async () => {
           const filePath = `./posts/${file}`;
           const postContent = await fs.readFile(filePath, "utf8");
           const { data, content } = matter(postContent);
-          console.log("Post data:", data);
-          console.log("Post content:", content);
+          // console.log("Post data:", data);
+          // console.log("Post content:", content);
 
           if (data.published === false) {
             return null;
           }
 
           const post = { ...data, body: content } as Post;
-          console.log("Returning post:", post);
+          // console.log("Returning post:", post);
           return post;
         })
     );
@@ -53,9 +53,9 @@ export const getPosts = cache(async () => {
 
 export async function getPost(slug: string) {
   const posts = await getPosts();
-  console.log("All posts:", posts);
+  // console.log("All posts:", posts);
   const post = posts.find((post) => post?.slug === slug);
-  console.log("Found post:", post);
+  console.log("Found post:", post?.title);
   return post as Post;
 }
 
