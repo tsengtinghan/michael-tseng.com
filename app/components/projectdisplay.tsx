@@ -18,7 +18,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   date,
 }) => {
   return (
-    <div className="flex flex-col items-center bg-white shadow-lg rounded-lg m-2">
+    <div className="flex flex-col justify-end items-center bg-white shadow-lg rounded-lg m-2">
       <Link href={href} target="_blank" rel="noopener noreferrer">
         {imageUrl && (
           <Image
@@ -26,7 +26,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             alt={`Project ${title}`}
             width={500}
             height={362}
-            className="w-full object-cover rounded-lg"
+            className="object-cover rounded-lg"
           />
         )}
         <div className="p-4">
