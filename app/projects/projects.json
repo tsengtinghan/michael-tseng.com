@@ -4,7 +4,7 @@
             "title": "Vizword",
             "description": "Create flashcards with ai generated images to memorize vocabulary",
             "href": "https://fullstack-diffusion.vercel.app/",
-            "imageUrl": "",
+            "imageUrl": "/vizword-demo.gif",
             "date": "June 2024"
         },
         {
