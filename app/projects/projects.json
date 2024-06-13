@@ -1,6 +1,13 @@
 {
     "projects": [
         {
+            "title": "Vizword",
+            "description": "Create flashcards with ai generated images to memorize vocabulary",
+            "href": "https://fullstack-diffusion.vercel.app/",
+            "imageUrl": "",
+            "date": "June 2024"
+        },
+        {
             "title": "XLearn",
             "description": "Integrate flashcard style memory recall in your X feed",
             "href": "https://github.com/tsengtinghan/x-dev-challenge",
