@@ -20,7 +20,7 @@ export default function About() {
         interested in machine learning and started working on side projects and
         doing computer vision research in local university. After reading Paul Graham's 
         essays, I became fascinated by tech startups and moved to sf to learn more about them.
-        Today, I'm a student and hack on side projects on nights & weekends.
+        Today, I'm a student and hack on side projects on nights &apos; weekends.
       </p>
       <Social />
     </div>
