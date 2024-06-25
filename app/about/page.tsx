@@ -18,7 +18,7 @@ export default function About() {
         The thriving semiconductor industry there inspired me to pursue a path
         in STEM, so I picked up C++ upon entering high school. I later became
         interested in machine learning and started working on side projects and
-        doing computer vision research at a local university. After reading Paul Graham's 
+        doing computer vision research at a local university. After reading Paul Graham&apos;s 
         essays, I became fascinated by tech startups and moved to SF to learn more about them.
         Today, I&apos;m a student and hack on side projects on nights &amp; weekends.
       </p>
