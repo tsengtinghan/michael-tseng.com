@@ -1,6 +1,13 @@
 {
     "projects": [
         {
+            "title": "PaperFlow",
+            "description": "automate real-estate paperworks by leveraging gpt4o's visual understanding",
+            "href": "https://github.com/tsengtinghan/PaperFlow",
+            "imageUrl": "/paperflow.png",
+            "date": "June 2024"
+        },
+        {
             "title": "Vizword",
             "description": "Create flashcards with ai generated images to memorize vocabulary",
             "href": "https://fullstack-diffusion.vercel.app/",
