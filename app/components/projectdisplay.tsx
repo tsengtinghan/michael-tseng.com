@@ -45,7 +45,7 @@ interface ProjectDisplayProps {
 
 const ProjectDisplay: React.FC<ProjectDisplayProps> = ({ projects }) => {
   return (
-    <div className="p-10 min-h-screen">
+    <div className="pt-10 min-h-screen">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {projects.map((project) => (
