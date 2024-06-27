@@ -8,11 +8,11 @@ export default function Navbar() {
           michael-tseng.com
         </h1>
       </Link>
-      <nav className="flex flex-row space-x-4 underline">
-        <Link href="/about">about</Link>
-        <Link href="/blog">blog</Link>
-        <Link href="/projects">projects</Link>
-        <Link href="/goodstuff">goodstuff</Link>
+      <nav className="flex flex-wrap underline">
+        <Link className="pr-3" href="/about">about</Link>
+        <Link className="pr-3" href="/blog">blog</Link>
+        <Link className="pr-3" href="/projects">projects</Link>
+        <Link className="pr-3" href="/goodstuff">goodstuff</Link>
         <Link href="/moments">moments</Link>
       </nav>
     </div>
