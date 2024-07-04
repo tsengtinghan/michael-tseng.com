@@ -1,4 +1,4 @@
-import { readPage } from "@lib/notion/read-page";
+import { readPage } from "@lib/notion/read";
 export default function GoodStuffPage() {
   readPage();
   return (
