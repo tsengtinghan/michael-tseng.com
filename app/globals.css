@@ -59,12 +59,14 @@ h3 {
   color: var(--foreground-default);
 }
 
-li a,
+
 p a {
   text-decoration: none;
   border-radius: 3px;
   background: var(--accent-transparent);
 }
+
+
 
 .typewriter {
   display: inline;
