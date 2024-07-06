@@ -31,7 +31,7 @@ body {
   --background-default: #f8f8f8;
   --background-block: #eee;
   --accent: #a02c35;
-  --accent-transparent: rgba(223, 73, 82, 0.25);
+  --accent-transparent: rgba(73, 176, 223, 0.25);
   --theme-color: #243d64;
 }
 
@@ -60,12 +60,18 @@ h3 {
 }
 
 
-p a {
+p a,
+li a {
   text-decoration: none;
-  border-radius: 3px;
+  border-radius: 4px;
   background: var(--accent-transparent);
+  padding: 1px 4px;
 }
 
+p a:hover,
+li a:hover {
+  color: gray;
+}
 
 
 .typewriter {
