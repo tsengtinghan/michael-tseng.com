@@ -23,7 +23,7 @@ export const pageToMd = async (id: string) => {
   const page = mdblocks.map(block => {
     return block.parent
   }).join("\n");
-  console.log(page)
+  // console.log(page)
 }
 
 export const readDbCollections = async () => {
@@ -33,11 +33,10 @@ export const readDbCollections = async () => {
       database_id: databaseId,
     });
     const poems = response.results;
-    console.log(poems[1])
-    pageToMd(poems[1].id)
     const poemsList = poems.map((poem: any) => {
       const name = poem.properties.Name.title[0]?.plain_text || 'No name';
-      return { name };
+      const text = pageToMd(poem.id)
+      return { name, text };
     });
     return poemsList;
   } catch (error) {
