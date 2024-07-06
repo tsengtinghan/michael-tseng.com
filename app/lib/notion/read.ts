@@ -26,9 +26,9 @@ export const readDbArticles = async (id: string) => {
     const articles = response.results;
     const articlesList = articles.map(article => {
       const name = article.properties.Name.title[0]?.plain_text || 'No name';
-      const url = article.properties.url?.url || 'No url';
-      const thoughts = article.properties.thoughts?.rich_text[0]?.plain_text || 'No thoughts';
-      const quotes = article.properties.quotes?.rich_text[0]?.plain_text || 'No quotes';
+      const url = article.properties.url?.url;
+      const thoughts = article.properties.thoughts?.rich_text[0]?.plain_text;
+      const quotes = article.properties.quotes?.rich_text[0]?.plain_text;
       return { name, url, thoughts, quotes };
     });
     return articlesList;

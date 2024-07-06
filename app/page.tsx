@@ -5,7 +5,6 @@ export default function Homepage() {
       still searching my{" "}
       <Link
         href={"https://www.youtube.com/watch?v=PUv66718DII"}
-        className="underline"
       >
         principles
       </Link>

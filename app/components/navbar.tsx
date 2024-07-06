@@ -4,7 +4,7 @@ export default function Navbar() {
   return (
     <div className="mb-10">
       <Link href="/">
-        <h1>
+        <h1 className="text-base inline">
           michael-tseng.com
         </h1>
       </Link>
