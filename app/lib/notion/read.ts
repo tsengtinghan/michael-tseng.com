@@ -1,20 +1,31 @@
 const { Client } = require("@notionhq/client");
-import { article } from "@lib/types";
 
 const notion = new Client({ auth: process.env.NOTION_API_KEY });
 
+export const readBlock = async (id: string) => {
+  const blockId = id
+  const response = await notion.blocks.children.list({
+    block_id: blockId,
+  });
+}
+
 export const readDbCollections = async () => {
-  const blockId = "788a976f93f04367a280964f2bae00ba";
+  const databaseId = "746262ce0f194773b093e8121473b30f"; 
   try {
-    const response = await notion.blocks.children.list({
-      block_id: blockId,
+    const response = await notion.databases.query({
+      database_id: databaseId,
     });
-    const childPages = response.results.filter(
-      (block) => block.type === "child_page" || block.type === "child_database"
-    );
-    console.log(childPages);
+    const poems = response.results;
+    console.log(poems[1])
+    readBlock(poems[1].id)
+    const poemsList = poems.map((poem: any) => {
+      const name = poem.properties.Name.title[0]?.plain_text || 'No name';
+      return { name };
+    });
+    return poemsList;
   } catch (error) {
-    console.error("Error fetching page:", error);
+    console.log("error: ", error);
+    return [];
   }
 };
 
