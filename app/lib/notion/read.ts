@@ -1,8 +1,9 @@
 const { Client } = require("@notionhq/client");
+import { article } from "@lib/types";
 
 const notion = new Client({ auth: process.env.NOTION_API_KEY });
 
-export const readPage = async () => {
+export const readDbCollections = async () => {
   const blockId = "788a976f93f04367a280964f2bae00ba";
   try {
     const response = await notion.blocks.children.list({
@@ -24,7 +25,7 @@ export const readDbArticles = async (id: string) => {
       database_id: databaseId,
     });
     const articles = response.results;
-    const articlesList = articles.map(article => {
+    const articlesList = articles.map((article: any) => {
       const name = article.properties.Name.title[0]?.plain_text || 'No name';
       const url = article.properties.url?.url;
       const thoughts = article.properties.thoughts?.rich_text[0]?.plain_text;

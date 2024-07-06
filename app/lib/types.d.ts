@@ -20,4 +20,11 @@ export type Post = {
     date: string
   }
 
+
+export type article = {
+    url: string,
+    name: string,
+    thoughts?: string,
+    quotes?: string
+}
   

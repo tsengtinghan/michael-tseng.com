@@ -1,5 +1,7 @@
 import React from 'react';
 import { readDbArticles } from '@lib/notion/read';
+import { article } from '@lib/types';
+
 
 const ArticleList = async () => {
   const articles = await readDbArticles("48f850f1585b475fa4b7674ac22d1c78");
@@ -7,7 +9,7 @@ const ArticleList = async () => {
     <div className="max-w-2xl mx-auto">
       <h2 className="text-l mb-4 text-gray-800">Writing</h2>
       <ul className="space-y-3">
-        {articles.map((article, index: number) => (
+        {articles.map((article: article, index: number) => (
           <li key={index} className="border-b border-gray-200 pb-3">
             <div className="flex items-center justify-between">
               {article.url && (
