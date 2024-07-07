@@ -1,5 +1,6 @@
 /* get ibm plex mono font */
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap');
 
 /* get augillion font */
 
@@ -57,6 +58,11 @@ h3 {
   font-size: 1em;
   line-height: 1.625em;
   color: var(--foreground-default);
+}
+
+.noto-serif-tc {
+  font-family: "Noto Serif TC", serif;
+  font-optical-sizing: auto;
 }
 
 
