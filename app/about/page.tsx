@@ -9,7 +9,7 @@ export default function About() {
         <div className="flex w-full">
           <div className="flex-shrink-0 w-full snap-center">
             <Image
-              src="/profile2.jpg"
+              src="/profile2.jpeg"
               alt="Profile picture 1"
               width={300}
               height={300}
@@ -18,7 +18,7 @@ export default function About() {
           </div>
           <div className="flex-shrink-0 w-full snap-center">
             <Image
-              src="/me.jpg"
+              src="/me.jpeg"
               alt="Profile picture 2"
               width={300}
               height={300}
