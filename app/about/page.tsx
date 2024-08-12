@@ -34,7 +34,7 @@ export default function About() {
           <Link href={"/blog/singularity-is-near-1"}>singularity</Link>
         </p>
         <p>
-          @ 🌉 I love startups!
+          嗨！我是曾亭翰，這裡是我放怪怪東西的地方
           <br /> currently learning web dev and ai to build something useful
         </p>
         <p>
