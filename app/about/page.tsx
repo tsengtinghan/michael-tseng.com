@@ -30,12 +30,12 @@ export default function About() {
       </div>
       <div className="prose-sm">
         <p>
+        <div className="noto-serif-tc font-medium text-base">曾亭翰</div>
           19, building for the{" "}
           <Link href={"/blog/singularity-is-near-1"}>singularity</Link>
         </p>
         <p>
-          嗨！我是曾亭翰，這裡是我放怪怪東西的地方
-          <br /> currently learning web dev and ai to build something useful
+          currently learning web dev and ai to build something useful
         </p>
         <p>
           I grew up in Hsinchu, Taiwan, a city where the wind never stops
