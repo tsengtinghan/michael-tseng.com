@@ -1,6 +1,13 @@
 {
     "projects": [
         {
+            "title": "ipmaker",
+            "description": "Generate unique visuals tailored to your brand using fine-tuned diffusion models",
+            "href": "https://ipmakerv2.vercel.app/",
+            "imageUrl": "/ipmaker.png",
+            "date": "September 2024"
+        },
+        {
             "title": "PaperFlow",
             "description": "automate real-estate paperworks by leveraging gpt4o's visual understanding",
             "href": "https://github.com/tsengtinghan/PaperFlow",
