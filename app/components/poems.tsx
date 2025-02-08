@@ -4,9 +4,11 @@ export default async function Poems() {
   return (
     <div>
       {poems.map((poem, index) => (
-        <div key={index} className="mb-32 noto-serif-tc ">
+        <div key={index} className="mb-32 noto-serif-tc">
+          <pre className="whitespace-pre-wrap break-words max-w-full noto-serif-tc mb-4">
+            {poem.text}
+          </pre>
           <p className="mb-2">{poem.name}</p>
-          <pre className="whitespace noto-serif-tc">{poem.text}</pre>
         </div>
       ))}
     </div>

@@ -3,7 +3,7 @@ export default function Homepage() {
   return (
     <div>
       building
-      <Link href={"https://ipmakerv2.vercel.app/"}> ipmaker</Link>
+      <Link href={"https://pupaai.com/"}> Pupa ai</Link>
       <br />
       <br />
       still searching my{" "}
