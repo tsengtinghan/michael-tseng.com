@@ -30,12 +30,13 @@ export default function About() {
       </div>
       <div className="prose-sm">
         <p>
-        <div className="noto-serif-tc font-medium text-base">曾亭翰</div>
-          19, building for the{" "}
+          <div className="noto-serif-tc font-medium text-base">曾亭翰</div>
+          20, building for the{" "}
           <Link href={"/blog/singularity-is-near-1"}>singularity</Link>
         </p>
         <p>
-          currently learning web dev and ai to build something useful
+          exploring <a href="https://pupaai.com/vision">ai media generation</a>{" "}
+          and building something people want
         </p>
         <p>
           I grew up in Hsinchu, Taiwan, a city where the wind never stops
@@ -47,6 +48,11 @@ export default function About() {
           fascinated by tech startups and moved to SF to learn more about them.
           Today, I&apos;m a student and hack on side projects on nights &amp;
           weekends.
+        </p>
+        <p>
+          always love collaborating on ideas/projects,
+          please {" "}
+          <a href="mailto:tsengtinghan@gmail.com">reach out!</a>
         </p>
       </div>
       <div className="clear-both pt-8">

@@ -1,5 +1,4 @@
 import Link, {LinkProps} from 'next/link'
-import Image, {ImageProps} from 'next/image'
 import type { MDXComponents } from 'mdx/types'
 import { Code } from 'bright'
 
