@@ -37,7 +37,7 @@ published: true
 
 ![](https://cdn.assets.lomography.com/ac/131f0bff8b832211d047a0a96899bcc0a62d70/461x576x2.jpg?auth=5d08bfa8ac7d00ec0bf7850067ef5e6e18b31fac)
 
-[photo impressionism](https://www.lomography.com/magazine/353614-modern-day-impressionism-through-film-photography-with-kyohyun-nam)
+[photo impressionism](https://www.lomography.com/magazine/353614-modern-day-impressionism-through-film-photography-with-kyohyun-nam) 印象派也反過來影響了攝影
 
 ## AI與藝術？
 
